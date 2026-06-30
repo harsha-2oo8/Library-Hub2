@@ -1,7 +1,6 @@
 {
   "buildCommand": "pnpm --filter @workspace/library-app run build",
   "outputDirectory": "artifacts/library-app/dist/public",
-  "framework": "vite",
   "env": {
     "PORT": "3000",
     "BASE_PATH": "/"
