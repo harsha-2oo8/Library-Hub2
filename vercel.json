@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd artifacts/library-app && vite build",
+  "buildCommand": "pnpm --filter @workspace/library-app run build",
   "outputDirectory": "artifacts/library-app/dist/public",
   "framework": "vite",
   "env": {
