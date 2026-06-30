@@ -8,6 +8,6 @@
     "BASE_PATH": "/"
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "https://library-api.onrender.com/api/$1" }
+    { "source": "/api/(.*)", "destination": "https://library-api-drze.onrender.com/api/$1" }
   ]
 }
