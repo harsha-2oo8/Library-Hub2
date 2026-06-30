@@ -1,7 +1,6 @@
 {
-  "rootDirectory": "artifacts/library-app",
-  "buildCommand": "vite build",
-  "outputDirectory": "dist/public",
+  "buildCommand": "cd artifacts/library-app && vite build",
+  "outputDirectory": "artifacts/library-app/dist/public",
   "framework": "vite",
   "env": {
     "PORT": "3000",
