@@ -1,0 +1,13 @@
+{
+  "rootDirectory": "artifacts/library-app",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist/public",
+  "framework": "vite",
+  "env": {
+    "PORT": "3000",
+    "BASE_PATH": "/"
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://library-api.onrender.com/api/$1" }
+  ]
+}
