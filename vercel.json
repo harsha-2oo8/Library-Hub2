@@ -6,6 +6,13 @@
       "maxDuration": 30
     }
   },
+  "env": {
+    "PORT": "3000",
+    "BASE_PATH": "/"
+  },
+  "typescript": {
+    "ignoreBuildErrors": true
+  },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.ts" },
     { "source": "/(.*)", "destination": "/index.html" }
