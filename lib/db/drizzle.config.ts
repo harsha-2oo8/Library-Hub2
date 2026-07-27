@@ -1,12 +1,14 @@
 import { defineConfig } from "drizzle-kit";
 
-if (!process.env.DATABASE_URL) {
+const DATABASE_URL = process.env.POSTGRES_URL || process.env.DATABASE_URL;
+
+if (!DATABASE_URL) {
   throw new Error("DATABASE_URL, ensure the database is provisioned");
 }
 
-const url = process.env.DATABASE_URL.includes("?")
-  ? process.env.DATABASE_URL + "&sslmode=require"
-  : process.env.DATABASE_URL + "?sslmode=require";
+const url = DATABASE_URL.includes("?")
+  ? DATABASE_URL + "&sslmode=require"
+  : DATABASE_URL + "?sslmode=require";
 
 export default defineConfig({
   schema: "./src/schema/index.ts",
