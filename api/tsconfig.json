@@ -6,8 +6,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": false,
-    "noEmit": true,
-    "outDir": "./dist"
+    "allowJs": true,
+    "jsx": "react-jsx"
   },
   "include": ["./**/*.ts", "../artifacts/api-server/src/**/*.ts"]
 }
