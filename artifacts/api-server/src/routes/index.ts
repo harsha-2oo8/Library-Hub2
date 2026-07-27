@@ -8,10 +8,12 @@ import reservationsRouter from "./reservations";
 import finesRouter from "./fines";
 import dashboardRouter from "./dashboard";
 import notificationsRouter from "./notifications";
+import setupRouter from "./setup";
 
 const router: IRouter = Router();
 
 router.use(healthRouter);
+router.use(setupRouter);
 router.use(authRouter);
 router.use(booksRouter);
 router.use(studentsRouter);
