@@ -12,6 +12,6 @@ services:
       - key: NODE_VERSION
         value: "24"
       - key: DATABASE_URL
-        value: postgresql://postgres:d5oNcMawkCO9hgxE@db.hzbiynbwlapitniiwosl.supabase.co:5432/postgres
+        value: postgresql://postgres:MS21vryt3ts2dHl0@db.hzbiynbwlapitniiwosl.supabase.co:5432/postgres?sslmode=require
       - key: SESSION_SECRET
         generateValue: true
