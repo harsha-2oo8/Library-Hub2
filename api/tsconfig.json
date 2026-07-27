@@ -1,10 +1,13 @@
 {
-  "extends": "../artifacts/api-server/tsconfig.json",
   "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "strict": false,
     "noEmit": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node"
+    "outDir": "./dist"
   },
-  "include": ["./**/*.ts"]
+  "include": ["./**/*.ts", "../artifacts/api-server/src/**/*.ts"]
 }
