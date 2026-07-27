@@ -1,0 +1,10 @@
+{
+  "extends": "../artifacts/api-server/tsconfig.json",
+  "compilerOptions": {
+    "strict": false,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
+  },
+  "include": ["./**/*.ts"]
+}
